@@ -1,8 +1,7 @@
-var firstNumber = parseInt(prompt("Enter the first length of the triangle:"));
-var secondNumber = parseInt(prompt("Enter the second length of the triangle:"));
-var thirdNumber = parseInt(prompt("Enter the third length of the triangle:"));
-
-var triangle = function(a, b, c) {
+var triangle = function() {
+  var a = parseInt(prompt("Enter the first length of the triangle:"));
+  var b = parseInt(prompt("Enter the second length of the triangle:"));
+  var c = parseInt(prompt("Enter the third length of the triangle:"));
   if (a+b <=c || b+c <=a || a+c <=b) {
 	alert("Its not a Triangle");
 }
@@ -20,5 +19,3 @@ else {
 }
 
 };
-
-triangle(firstNumber, secondNumber, thirdNumber);
